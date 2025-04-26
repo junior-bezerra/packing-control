@@ -38,8 +38,8 @@ public class ParkingSpotService {
 
     }
 
-    public Page<ParkingSpotModel> findAll(Pageable pageable) {
-        return parkingSpotRepository.findAll(pageable);
+    public List<ParkingSpotModel> findAll() {
+        return parkingSpotRepository.findAll();
     }
 
     public Optional<ParkingSpotModel> findById(UUID id) {

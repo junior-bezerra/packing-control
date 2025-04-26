@@ -1,0 +1,16 @@
+package com.api.packing_control.service;
+
+import com.api.packing_control.repository.ParkingSpotRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ParkingStopService {
+
+    @Autowired
+    final ParkingSpotRepository parkingSpotRepository;
+
+    public ParkingStopService(ParkingSpotRepository parkingSpotRepository) {
+        this.parkingSpotRepository = parkingSpotRepository;
+    }
+}
